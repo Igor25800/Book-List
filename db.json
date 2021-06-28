@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "books": "11",
+      "name": "2222",
+      "category": "Комедія",
+      "isbn": "2"
+    },
+    {
+      "id": 4,
+      "books": "ss",
+      "name": "ss",
+      "category": "Ужаси",
+      "isbn": "ss"
+    }
+  ]
+}

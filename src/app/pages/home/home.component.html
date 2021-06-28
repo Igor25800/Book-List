@@ -1,0 +1,33 @@
+<button mat-raised-button   color="primary" (click)="bollean(false) ; openDialog(); ">Добавить Книгу</button>
+
+<table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Назва книги</th>
+        <th>Ім'я автора</th>
+        <th>Категорія</th>
+        <th>ISBN</th>
+        <th>Редагувати</th>
+        <th>Видалити</th>
+      </tr>
+     
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of userArr let i = index" > 
+        <td>{{i+1}}</td>
+        <td>{{item.books}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.isbn}}</td>
+        <td>
+          <button mat-raised-button color="accent" (click)="bollean(true, item.id); openDialog()  ">Edit</button>
+        </td>
+        <td>
+          <button mat-raised-button color="warn" (click)="deleteUser(item)">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
